@@ -1,0 +1,48 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "name" : "suites",
+  "children" : [ {
+    "name" : "test_new",
+    "children" : [ {
+      "name" : "test_sale[SafeCharge直连支付接口-application/x-www-form-urlencoded; charset=utf-8-param0]",
+      "uid" : "26a4bec50acd1507",
+      "parentUid" : "ddd5738cb8a8d8c783ea90e2c9117915",
+      "status" : "passed",
+      "time" : {
+        "start" : 1602309979196,
+        "stop" : 1602309986157,
+        "duration" : 6961
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "'SafeCharge直连支付接口'", "'application/x-www-form-urlencoded; charset=utf-8'", "{'merchantNo': '21677', 'subAccount': '21677001', 'transactionId': '1602309979187', 'amount': '18.88', 'cardNumber': '5333309736307960', 'currency': 'USD', 'discount': '-2', 'products': 'HUAWEI/华为Mate30 5G手机#,#1#,#1#,#1#;#华为Mate30透明硅胶软壳#,#2#,#1#,#2', 'notifyUrl': 'http://9uz3rhby.vaiwan.com/notify?a=b&c=d', 'platform': 'taobao', 'freightFee': '1.00', 'consumerId': 'ergou.wang', 'consumerLevel': '10', 'token': 'NO', 'merchantBizId': 'i200630001', 'payToken': None, 'month': '09', 'year': '2028', 'cvv': '534', 'issuingBank': 'cmb', 'firstName': 'ergou', 'lastName': 'wang', 'email': 'approve@forter.com', 'transactionIp': '127.0.0.1', 'phone': '18888888888', 'country': 'AR', 'state': 'Buenos Aires', 'city': 'shenzhen', 'address': 'futian', 'zipCode': '518000', 'operationSystem': 'win10', 'browerType': 'firefox', 'browerLan': 'zh-CN', 'timeZone': '+8', 'screenPixel': '1366*768', 'isPasteCard': 0, 'newCookies': None, 'oldCookies': None, 'transactionWebSite': 'www.test.com', 'personTaxId': '94461807231', 'areaCode': None, 'birthday': None, 'tokenValue': 'YES', 'installment': None, 'freightMethod': 'xxx', 'consigneeFirstName': 'li', 'consigneeLastName': 'si', 'consigneeEmail': 'zhangsan@163.com', 'consigneePhone': '18666666666', 'consigneeCountry': 'US', 'consigneeState': 'NY', 'consigneeCity': 'NY', 'consigneeAddress': 'huaerjie', 'consigneeZipCode': '55555', 'sign': 'a0cb6c7a2d8ea66c185f471c7f16153c0f72f0a4452a9d2fdf0da59fef971bfb', 'remark': '支付测试', 'streetNumber': 1040}" ]
+    }, {
+      "name" : "test_sale[CD直连支付接口-application/x-www-form-urlencoded; charset=utf-8-param1]",
+      "uid" : "e0ee1d05974ba759",
+      "parentUid" : "ddd5738cb8a8d8c783ea90e2c9117915",
+      "status" : "passed",
+      "time" : {
+        "start" : 1602309986165,
+        "stop" : 1602309989755,
+        "duration" : 3590
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "'CD直连支付接口'", "'application/x-www-form-urlencoded; charset=utf-8'", "{'merchantNo': '21659', 'subAccount': '21659001', 'transactionId': '1602309979189', 'amount': '18.88', 'cardNumber': '4012000000060085', 'currency': 'USD', 'discount': '-2', 'products': 'HUAWEI/华为Mate30 5G手机#,#1#,#1#,#1#;#华为Mate30透明硅胶软壳#,#2#,#1#,#2', 'notifyUrl': 'http://9uz3rhby.vaiwan.com/notify?a=b&c=d', 'platform': 'taobao', 'freightFee': '1.00', 'consumerId': 'ergou.wang', 'consumerLevel': '10', 'token': 'NO', 'merchantBizId': 'i200630001', 'payToken': None, 'month': '09', 'year': '2028', 'cvv': '534', 'issuingBank': 'cmb', 'firstName': 'ergou', 'lastName': 'wang', 'email': 'approve@forter.com', 'transactionIp': '127.0.0.1', 'phone': '18888888888', 'country': 'AR', 'state': 'Buenos Aires', 'city': 'shenzhen', 'address': 'futian', 'zipCode': '518000', 'operationSystem': 'win10', 'browerType': 'firefox', 'browerLan': 'zh-CN', 'timeZone': '+8', 'screenPixel': '1366*768', 'isPasteCard': 0, 'newCookies': None, 'oldCookies': None, 'transactionWebSite': 'www.test.com', 'personTaxId': '94461807231', 'areaCode': None, 'birthday': None, 'tokenValue': 'YES', 'installment': None, 'freightMethod': 'xxx', 'consigneeFirstName': 'li', 'consigneeLastName': 'si', 'consigneeEmail': 'zhangsan@163.com', 'consigneePhone': '18666666666', 'consigneeCountry': 'US', 'consigneeState': 'NY', 'consigneeCity': 'NY', 'consigneeAddress': 'huaerjie', 'consigneeZipCode': '55555', 'sign': '451829f6d63ba91729d132b70ed2495e3950d279c0221ccf1b10cdda86d387aa', 'remark': '支付测试', 'streetNumber': 1040}" ]
+    }, {
+      "name" : "test_sale[Ebanx直连支付接口-application/x-www-form-urlencoded; charset=utf-8-param2]",
+      "uid" : "f0e35ee09b1d7902",
+      "parentUid" : "ddd5738cb8a8d8c783ea90e2c9117915",
+      "status" : "passed",
+      "time" : {
+        "start" : 1602309989765,
+        "stop" : 1602309996198,
+        "duration" : 6433
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "'Ebanx直连支付接口'", "'application/x-www-form-urlencoded; charset=utf-8'", "{'merchantNo': '21674', 'subAccount': '21674002', 'transactionId': '1602309979190', 'amount': '18.88', 'cardNumber': '4000000000001000', 'currency': 'USD', 'discount': '-2', 'products': 'HUAWEI/华为Mate30 5G手机#,#1#,#1#,#1#;#华为Mate30透明硅胶软壳#,#2#,#1#,#2', 'notifyUrl': 'http://9uz3rhby.vaiwan.com/notify?a=b&c=d', 'platform': 'taobao', 'freightFee': '1.00', 'consumerId': 'ergou.wang', 'consumerLevel': '10', 'token': 'NO', 'merchantBizId': 'i200630001', 'payToken': None, 'month': '09', 'year': '2028', 'cvv': '534', 'issuingBank': 'cmb', 'firstName': 'ergou', 'lastName': 'wang', 'email': 'approve@forter.com', 'transactionIp': '127.0.0.1', 'phone': '18888888888', 'country': 'AR', 'state': 'Buenos Aires', 'city': 'shenzhen', 'address': 'futian', 'zipCode': '518000', 'operationSystem': 'win10', 'browerType': 'firefox', 'browerLan': 'zh-CN', 'timeZone': '+8', 'screenPixel': '1366*768', 'isPasteCard': 0, 'newCookies': None, 'oldCookies': None, 'transactionWebSite': 'www.test.com', 'personTaxId': '94461807231', 'areaCode': None, 'birthday': None, 'tokenValue': 'YES', 'installment': None, 'freightMethod': 'xxx', 'consigneeFirstName': 'li', 'consigneeLastName': 'si', 'consigneeEmail': 'zhangsan@163.com', 'consigneePhone': '18666666666', 'consigneeCountry': 'US', 'consigneeState': 'NY', 'consigneeCity': 'NY', 'consigneeAddress': 'huaerjie', 'consigneeZipCode': '55555', 'sign': '7e4bb938ac29917849b842a66a1173449577ac3654c41102b3d5e330415f876d', 'remark': '支付测试', 'streetNumber': 1040}" ]
+    } ],
+    "uid" : "ddd5738cb8a8d8c783ea90e2c9117915"
+  } ]
+}

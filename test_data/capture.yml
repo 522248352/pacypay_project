@@ -1,0 +1,43 @@
+---
+    casename: "safecharge扣款接口"
+    url: "https://test-v2.pacypay.com/merchant/api/capture"
+    head: "application/json"
+    key: "Y83vXxv1bO04HY2x6Wb703tX6cf184"
+    params:
+        merchantNo: "21677"
+        subAccount: "21677001"
+        sign: ""
+        captureOrders:
+          - tradeNo: ""
+            transactionId: ""
+            currency: "USD"
+            amount: "18.88"
+---
+    casename: "CD扣款接口"
+    url: "https://test-v2.pacypay.com/merchant/api/capture"
+    head: "application/json"
+    key: "98702ru05VD25L24r43Ss28K808fT4"
+    params:
+        merchantNo: "21659"
+        subAccount: "21659001"
+        sign: ""
+        captureOrders:
+          - tradeNo: ""
+            transactionId: ""
+            currency: "USD"
+            amount: "18.88"
+---
+    casename: "Ebank扣款接口"
+    url: "https://test-v2.pacypay.com/merchant/api/capture"
+    head: "application/json"
+    key: "49529J62Bz671HI73vfMr22gK751e5"
+    params:
+        merchantNo: "21674"
+        subAccount: "21674002"
+        sign: ""
+        captureOrders:
+          - tradeNo: ""
+            transactionId: ""
+            currency: "USD"
+            amount: "18.88"
+...

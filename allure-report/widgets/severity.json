@@ -1,0 +1,31 @@
+[ {
+  "uid" : "e0ee1d05974ba759",
+  "name" : "test_sale[CD直连支付接口-application/x-www-form-urlencoded; charset=utf-8-param1]",
+  "time" : {
+    "start" : 1602309986165,
+    "stop" : 1602309989755,
+    "duration" : 3590
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "26a4bec50acd1507",
+  "name" : "test_sale[SafeCharge直连支付接口-application/x-www-form-urlencoded; charset=utf-8-param0]",
+  "time" : {
+    "start" : 1602309979196,
+    "stop" : 1602309986157,
+    "duration" : 6961
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f0e35ee09b1d7902",
+  "name" : "test_sale[Ebanx直连支付接口-application/x-www-form-urlencoded; charset=utf-8-param2]",
+  "time" : {
+    "start" : 1602309989765,
+    "stop" : 1602309996198,
+    "duration" : 6433
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]

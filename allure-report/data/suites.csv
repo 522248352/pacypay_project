@@ -1,0 +1,22 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Sat Oct 10 14:06:19 CST 2020","Sat Oct 10 14:06:26 CST 2020","6961","","test_new","","","","test_sale[SafeCharge直连支付接口-application/x-www-form-urlencoded; charset=utf-8-param0]","
+
+    :param casename1: 案例名-渠道名称
+    :param head: 请求头 content-type
+    :param param: 请求参数
+    :return:
+    "
+"passed","Sat Oct 10 14:06:26 CST 2020","Sat Oct 10 14:06:29 CST 2020","3590","","test_new","","","","test_sale[CD直连支付接口-application/x-www-form-urlencoded; charset=utf-8-param1]","
+
+    :param casename1: 案例名-渠道名称
+    :param head: 请求头 content-type
+    :param param: 请求参数
+    :return:
+    "
+"passed","Sat Oct 10 14:06:29 CST 2020","Sat Oct 10 14:06:36 CST 2020","6433","","test_new","","","","test_sale[Ebanx直连支付接口-application/x-www-form-urlencoded; charset=utf-8-param2]","
+
+    :param casename1: 案例名-渠道名称
+    :param head: 请求头 content-type
+    :param param: 请求参数
+    :return:
+    "

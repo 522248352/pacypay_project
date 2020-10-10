@@ -1,0 +1,85 @@
+{
+  "uid" : "26a4bec50acd1507",
+  "name" : "test_sale[SafeCharge直连支付接口-application/x-www-form-urlencoded; charset=utf-8-param0]",
+  "fullName" : "test_new#test_sale",
+  "historyId" : "bf47f9714c9459244d9aa541d2b63102",
+  "time" : {
+    "start" : 1602309979196,
+    "stop" : 1602309986157,
+    "duration" : 6961
+  },
+  "description" : "\n\n    :param casename1: 案例名-渠道名称\n    :param head: 请求头 content-type\n    :param param: 请求参数\n    :return:\n    ",
+  "descriptionHtml" : "<pre><code>:param casename1: 案例名-渠道名称\n:param head: 请求头 content-type\n:param param: 请求参数\n:return:\n</code></pre>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "__pytest_repeat_step_number",
+    "time" : {
+      "start" : 1602309979196,
+      "stop" : 1602309979196,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "first"
+  }, {
+    "name" : "tag",
+    "value" : "sale"
+  }, {
+    "name" : "tag",
+    "value" : "run(order=0)"
+  }, {
+    "name" : "suite",
+    "value" : "test_new"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-CLD22EL"
+  }, {
+    "name" : "thread",
+    "value" : "33036-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_new"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "casename1",
+    "value" : "'SafeCharge直连支付接口'"
+  }, {
+    "name" : "head",
+    "value" : "'application/x-www-form-urlencoded; charset=utf-8'"
+  }, {
+    "name" : "param",
+    "value" : "{'merchantNo': '21677', 'subAccount': '21677001', 'transactionId': '1602309979187', 'amount': '18.88', 'cardNumber': '5333309736307960', 'currency': 'USD', 'discount': '-2', 'products': 'HUAWEI/华为Mate30 5G手机#,#1#,#1#,#1#;#华为Mate30透明硅胶软壳#,#2#,#1#,#2', 'notifyUrl': 'http://9uz3rhby.vaiwan.com/notify?a=b&c=d', 'platform': 'taobao', 'freightFee': '1.00', 'consumerId': 'ergou.wang', 'consumerLevel': '10', 'token': 'NO', 'merchantBizId': 'i200630001', 'payToken': None, 'month': '09', 'year': '2028', 'cvv': '534', 'issuingBank': 'cmb', 'firstName': 'ergou', 'lastName': 'wang', 'email': 'approve@forter.com', 'transactionIp': '127.0.0.1', 'phone': '18888888888', 'country': 'AR', 'state': 'Buenos Aires', 'city': 'shenzhen', 'address': 'futian', 'zipCode': '518000', 'operationSystem': 'win10', 'browerType': 'firefox', 'browerLan': 'zh-CN', 'timeZone': '+8', 'screenPixel': '1366*768', 'isPasteCard': 0, 'newCookies': None, 'oldCookies': None, 'transactionWebSite': 'www.test.com', 'personTaxId': '94461807231', 'areaCode': None, 'birthday': None, 'tokenValue': 'YES', 'installment': None, 'freightMethod': 'xxx', 'consigneeFirstName': 'li', 'consigneeLastName': 'si', 'consigneeEmail': 'zhangsan@163.com', 'consigneePhone': '18666666666', 'consigneeCountry': 'US', 'consigneeState': 'NY', 'consigneeCity': 'NY', 'consigneeAddress': 'huaerjie', 'consigneeZipCode': '55555', 'sign': 'a0cb6c7a2d8ea66c185f471c7f16153c0f72f0a4452a9d2fdf0da59fef971bfb', 'remark': '支付测试', 'streetNumber': 1040}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "sale", "run(order=0)", "first" ]
+  },
+  "source" : "26a4bec50acd1507.json",
+  "parameterValues" : [ "'SafeCharge直连支付接口'", "'application/x-www-form-urlencoded; charset=utf-8'", "{'merchantNo': '21677', 'subAccount': '21677001', 'transactionId': '1602309979187', 'amount': '18.88', 'cardNumber': '5333309736307960', 'currency': 'USD', 'discount': '-2', 'products': 'HUAWEI/华为Mate30 5G手机#,#1#,#1#,#1#;#华为Mate30透明硅胶软壳#,#2#,#1#,#2', 'notifyUrl': 'http://9uz3rhby.vaiwan.com/notify?a=b&c=d', 'platform': 'taobao', 'freightFee': '1.00', 'consumerId': 'ergou.wang', 'consumerLevel': '10', 'token': 'NO', 'merchantBizId': 'i200630001', 'payToken': None, 'month': '09', 'year': '2028', 'cvv': '534', 'issuingBank': 'cmb', 'firstName': 'ergou', 'lastName': 'wang', 'email': 'approve@forter.com', 'transactionIp': '127.0.0.1', 'phone': '18888888888', 'country': 'AR', 'state': 'Buenos Aires', 'city': 'shenzhen', 'address': 'futian', 'zipCode': '518000', 'operationSystem': 'win10', 'browerType': 'firefox', 'browerLan': 'zh-CN', 'timeZone': '+8', 'screenPixel': '1366*768', 'isPasteCard': 0, 'newCookies': None, 'oldCookies': None, 'transactionWebSite': 'www.test.com', 'personTaxId': '94461807231', 'areaCode': None, 'birthday': None, 'tokenValue': 'YES', 'installment': None, 'freightMethod': 'xxx', 'consigneeFirstName': 'li', 'consigneeLastName': 'si', 'consigneeEmail': 'zhangsan@163.com', 'consigneePhone': '18666666666', 'consigneeCountry': 'US', 'consigneeState': 'NY', 'consigneeCity': 'NY', 'consigneeAddress': 'huaerjie', 'consigneeZipCode': '55555', 'sign': 'a0cb6c7a2d8ea66c185f471c7f16153c0f72f0a4452a9d2fdf0da59fef971bfb', 'remark': '支付测试', 'streetNumber': 1040}" ]
+}

@@ -1,0 +1,15 @@
+---
+    casename: "safecharge取消接口"
+    url: "https://test-v2.pacypay.com/merchant/api/cancel"
+    head: "application/json"
+    key: "Y83vXxv1bO04HY2x6Wb703tX6cf184"
+    params:
+        merchantNo: "21677"
+        subAccount: "21677001"
+        sign: ""
+        cancelOrders:
+          - tradeNo: "3668444060445310976"
+            transactionId: "15895973"
+            currency: "USD"
+            amount: "18.88"
+...

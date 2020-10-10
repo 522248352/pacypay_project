@@ -1,0 +1,56 @@
+---
+    casename: "SafeCharge跳转支付接口"
+    urls1: "https://test-v2.pacypay.com/gateway/Interface"
+    kyes: "6sTX81178s87ozyB9idUCeF64Ybz66"
+    head: "application/x-www-form-urlencoded; charset=utf-8"
+    params1:
+        merchantNo: "21677"
+        subAccount: "21677002"
+        transactionId: ""
+        amount: "12.56"
+        sign: ""
+    urls2: "https://test-v2.pacypay.com/gateway/SendInterface"
+    params2:
+        cardNumber: "5333309736307960"
+        country_label: "United States"
+        country: "US"
+        state: "NY"
+...
+---
+    casename: "CD跳转支付接口"
+    urls1: "https://test-v2.pacypay.com/gateway/Interface"
+    kyes: "352G2Uz1JIsE4VHYoyJu45tVHI1444"
+    head: "application/x-www-form-urlencoded; charset=utf-8"
+    params1:
+        merchantNo: "21657"
+        subAccount: "21657009"
+        transactionId: ""
+        amount: "12.56"
+        sign: ""
+    urls2: "https://test-v2.pacypay.com/gateway/SendInterface"
+    params2:
+        cardNumber: "4012000000060085"
+        country_label: "United States"
+        country: "US"
+        state: "NY"
+...
+---
+    casename: "Ebank跳转支付接口"
+    urls1: "https://test-v2.pacypay.com/gateway/Interface"
+    kyes: "84RFP87Jj615kBBK7sK53l1Qj436pv"
+    head: "application/x-www-form-urlencoded; charset=utf-8"
+    params1:
+        merchantNo: "21674"
+        subAccount: "21674001"
+        transactionId: ""
+        amount: "12.56"
+        sign: ""
+    urls2: "https://test-v2.pacypay.com/gateway/SendInterface"
+    params2:
+        cardNumber: "4000000000001000"
+        country_label: "Argentina"
+        country: "AR"
+        state: "Buenos Aires"
+        personTaxId: "30-52135353-1"
+        streetNumber: 1040
+...
