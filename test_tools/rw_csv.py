@@ -1,16 +1,19 @@
 import csv
 from collections import Iterable
+import os
 
 """
 读 写 操作
 """
+current_path = os.path.dirname(__file__)
+current_path_up = os.path.dirname(current_path)
 def read_csv(filename):
     """
     读 csv 文件
     :param filename:
     :return:
     """
-    with open("../test_data/"+filename,"r") as csvfile:
+    with open(current_path_up+"/test_data/"+filename,"r") as csvfile:
 
         files = csv.DictReader(csvfile)
 
@@ -25,7 +28,7 @@ def write_csv(filename, data):
     :param filename:
     :return:
     """
-    with open("../test_data/"+filename,"a+",newline='') as f:
+    with open(current_path_up+"/test_data/"+filename,"a+",newline='') as f:
 
         dataf = csv.writer(f)
         for i in data:
