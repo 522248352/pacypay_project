@@ -88,5 +88,5 @@ if __name__ == "__main__":
     # test_safecharge_sale()
 
     # pytest.main(["-vs","test_safecharge_sale.py"])
-    # pytest.main(["-vs","test_safecharge_sale.py"])
-    test_safecharge_sale()
+    pytest.main(["-vs","test_safecharge_sale.py"])
+    # test_safecharge_sale()

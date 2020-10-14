@@ -100,6 +100,7 @@ def test_sale(casename1,head,param):
 
 
 if __name__ == '__main__':
-    pytest.main(["-sq","test_new.py",'--alluredir','../report'])
+    # pytest.main(["-sq","test_new.py",'--alluredir','../report'])
     # pytest.main(["-vs","--collect-only","test_new.py"])
+    pytest.main(["-sq","test_new.py"])
 
