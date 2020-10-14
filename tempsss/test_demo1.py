@@ -4,7 +4,7 @@ import pytest
 @allure.feature('前台子系统')
 def test_01():
     print("01")
-    assert 1==1
+    assert 1==12
 
 def test_02():
     print("02")
