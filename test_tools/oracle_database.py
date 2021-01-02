@@ -28,7 +28,7 @@ class DB(object):
             self.cursor_en.execute(sql)
             return self.cursor_en.fetchall()
         except Exception as e:
-            logger.error(e+"查询query方法报错")
+            logger.error("查询query方法报错%s"%e)
 
         # finally:
         #     self.conn.close()

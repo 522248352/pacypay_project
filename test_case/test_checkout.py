@@ -1,48 +1,15 @@
-from test_tools import data_encrypt,read_yaml
+
 import requests
-import time
 import re
-import logging
+from nb_log import LogManager
+from test_tools.newcheckout import newcheckout
 from test_tools.oracle_database import DB
 import pytest
 
+logger = LogManager("diy").get_logger_and_add_handlers(log_filename = 'ApiTest.log')
+datas = newcheckout('commondata_check.yml','checkout.yml')
 
-def newcheckout():
-
-    commdatas = read_yaml.get_yamlDataOne("commondata_check.yml")
-    commdata1 = commdatas["comdata1"]
-    commdata2 = commdatas["comdata2"]
-
-    specdatas = read_yaml.get_yamlDataTwo("checkout.yml")
-
-    casename = []
-    head = []
-    param1 = []
-    param2 = []
-    for i in specdatas:
-
-        i["params1"].update(commdata1)
-        i["params2"].update(commdata2)
-
-        t = time.time()
-        i["params1"]["transactionId"] = str(int(round(t * 1000)))
-
-        # 获取需要加密的顺序数据
-        waitencrypt = i["params1"]["merchantNo"] + i["params1"]["subAccount"] + \
-                      i["params1"]["transactionId"] + i["params1"]["currency"] + \
-                      i["params1"]["amount"] + i["params1"]["returnUrl"] + i["kyes"]
-
-        sign = data_encrypt.dataEncrypt(waitencrypt)
-        i["params1"]["sign"] = sign
-
-        param1.append(i["params1"])
-        param2.append(i["params2"])
-        casename.append(i["casename"])
-        head.append(i["head"])
-
-    return list(zip(casename,head,param1,param2))
-
-@pytest.mark.parametrize("casename,head,param1,param2",newcheckout())
+@pytest.mark.parametrize("casename,head,param1,param2",datas)
 def test_checkout(casename,head,param1,param2):
     """
     SafeCharge 跳转支付
@@ -51,21 +18,23 @@ def test_checkout(casename,head,param1,param2):
     sess = requests.session()
     resu1 = sess.post(url="https://test-v2.pacypay.com/gateway/Interface",
                       data=param1, headers={"content-type":head})
-    print(resu1.headers)
+
+    # logger.info('第一步返回的响应数据====%s'%resu1.text)
+    logger.info('第一步返回的请求头数据=====%s'%resu1.headers)
     # 获取返回的 tradeNo
     trno = re.search('(.*?)tradeNo=(.*?)\\"', str(resu1.text)).group(2)
-    print("trno==============================%s" % trno)
+    logger.info("trno==============================%s" % trno)
 
     # 判断第一步返回信息
     assert trno != ""
 
-    print("【%s】第一步执行结束.................."%(casename))
+    logger.info("【%s】第一步执行结束.................."%(casename))
     param2["tradeNo"] = trno
 
     resu2 = sess.post(url="https://test-v2.pacypay.com/gateway/SendInterface",
                       data=param2, headers={"content-type":head})
-    print(resu2.status_code)
-    print(param2)
+    logger.info('第二步返回====%s'%resu2.status_code)
+    logger.info('第二步请求参数====%s'%param2)
     # print(resu2.text)
 
     # 判断第二步返回信息
@@ -77,7 +46,7 @@ def test_checkout(casename,head,param1,param2):
            "TR_PAYMENT_STATUS,TR_BANKCURRENCY,TR_BANKAMOUT," \
            "TR_BANK_CODE,TR_BANKRETURNCODE,TR_BANKINFO,TR_NOTIFYURL," \
            "TR_CAPTURED,TR_CAPTURE_TIME,TR_INF_TYPE,TR_CARDTYPE FROM CCPS_TRADERECORD" \
-           " where tr_no ="+trno
+           " where tr_no ='%s'"%trno
 
     resuf = db1.query(sql1)
     db1.closes()
