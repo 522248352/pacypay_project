@@ -2,11 +2,12 @@ import time
 
 from nb_log import LogManager
 from test_tools import read_yaml, data_encrypt
+import pytest
 
 logger = LogManager("diy").get_logger_and_add_handlers(log_filename = 'ApiTest.log')
 
 def newcheckout(commondata_check,checkout):
-
+    dic1 = {'ECP':pytest.mark.ECP, 'CD':pytest.mark.CD, 'CARDPAY':pytest.mark.CARDPAY}
     commdatas = read_yaml.get_yamlDataOne(commondata_check)
     commdata1 = commdatas["comdata1"]
     commdata2 = commdatas["comdata2"]
@@ -17,6 +18,7 @@ def newcheckout(commondata_check,checkout):
     head = []
     param1 = []
     param2 = []
+    mark = []
     for i in specdatas:
 
         i["params1"].update(commdata1)
@@ -37,5 +39,6 @@ def newcheckout(commondata_check,checkout):
         param2.append(i["params2"])
         casename.append(i["casename"])
         head.append(i["head"])
+        mark.append(dic1[i["mark"]])
 
-    return list(zip(casename,head,param1,param2))
+    return list(zip(casename,head,param1,param2,mark))
