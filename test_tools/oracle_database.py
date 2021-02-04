@@ -1,9 +1,8 @@
 import cx_Oracle
 from nb_log import LogManager
 from test_tools.rw_csv import read_csv
+from log.logg_diy import logger
 
-
-logger = LogManager("diy").get_logger_and_add_handlers(log_filename = 'ApiTest.log')
 
 csv_param = read_csv("database.csv")
 print(csv_param)
