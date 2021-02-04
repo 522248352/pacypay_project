@@ -71,8 +71,8 @@ def test_sale(casename, head, param):
 if __name__ == '__main__':
 
 
-    # pytest.main(["-sq","test_new.py",'--alluredir','../report'])
-    # pytest.main(["-vs","--collect-only","test_new.py","test_checkout.py"])
-    # pytest.main(["-sq","test_sale.py",])
-    pytest.main(["-sq", '-m','sale',"test_sale.py", ])
+    # pytest.main(["-sq","test_sale.py",'--alluredir','../allurefiles'])
+    # pytest.main(["-vs","--collect-only","test_sale.py","test_checkout_new.py"])
+    pytest.main(["-sq","test_sale.py",])
+    # pytest.main(["-sq", '-m','sale',"test_sale.py", ])
 

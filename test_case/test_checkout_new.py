@@ -58,5 +58,6 @@ def test_checkout(casename, head, param1, param2):
     assert dbResu[0][0] in ['1000','2000']
 
 if __name__ == '__main__':
-    # pytest.main(['-sq','test_checkout_new.py'])
-    pytest.main(['-sq','-m','ecpNew','test_checkout_new.py'])
+    # pytest.main(['-sq','test_checkout_new.py','--alluredir','../allurefiles'])
+    # pytest.main(['-sq','-m','ecpNew','test_checkout_new.py'])
+    pytest.main(['-sq', 'test_checkout_new.py', '--alluredir', '../allurefiles'])
