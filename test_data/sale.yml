@@ -9,17 +9,23 @@
         transactionId: ""
         amount: "18.88"
         cardNumber: "5333309736307960"
+    mark:
+        - safechargeSale
+        - safecharge
 ---
         casenames: "CD直连支付接口"
         urls: "https://test-v2.pacypay.com/gateway/TPInterface"
-        keys: "98702ru05VD25L24r43Ss28K808fT4"
+        keys: "Y404XF7q0642260npHbUZK12h63AQ7"
         heads: "application/x-www-form-urlencoded; charset=utf-8"
         params:
-            merchantNo: "21659"
-            subAccount: "21659001"
+            merchantNo: "21677"
+            subAccount: "21677008"
             transactionId: ""
-            amount: "18.88"
+            amount: "1.12"
             cardNumber: "4012000000060085"
+        mark:
+            - cdSale
+            - cd
 ---
         casenames: "Ebanx直连支付接口"
         urls: "https://test-v2.pacypay.com/gateway/TPInterface"
@@ -31,4 +37,7 @@
             transactionId: ""
             amount: "18.88"
             cardNumber: "4000000000001000"
+        mark:
+            - ebankSale
+            - ebank
 ...

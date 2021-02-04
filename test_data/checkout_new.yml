@@ -16,45 +16,51 @@
         country_label: "United States"
         country: "US"
         state: "NY"
-    mark: ECP
+    mark:
+        - ecpNew
+        - ecp
 ...
 ---
-    casename: "CD新收银台"
+    casename: "SF新收银台"
     urls1: "https://test-v2.pacypay.com/gateway/Interface"
-    kyes: "2s9g494O27Q7E25tndy4swg8R43t4r"
+    kyes: "J83S88ccy6z3s0o43h5P140X891m63"
     head: "application/x-www-form-urlencoded; charset=utf-8"
     params1:
         merchantNo: "21687"
-        subAccount: "21687002"
+        subAccount: "21687004"
         transactionId: ""
         amount: "12.56"
         sign: ""
         transactionWebSite: "https://www.feetinloves.com"
     urls2: "https://test-v2.pacypay.com/gateway/SendInterface"
     params2:
-        cardNumber: "4012000000060085"
+        cardNumber: "4000023104662535"
         country_label: "United States"
         country: "US"
         state: "NY"
-    mark: CD
+    mark:
+        - safechargeNew
+        - safecharge
 ...
 ---
-    casename: "CARDPAY新收银台"
+    casename: "TRUSTPAY新收银台"
     urls1: "https://test-v2.pacypay.com/gateway/Interface"
-    kyes: "0YB6WTXP93LoA08Nr75e2b547he2Nt"
+    kyes: "p3d05x8Txoc6UlCMC3gl611g9n8a8j"
     head: "application/x-www-form-urlencoded; charset=utf-8"
     params1:
         merchantNo: "21687"
-        subAccount: "21687003"
+        subAccount: "21687005"
         transactionId: ""
         amount: "12.56"
         sign: ""
         transactionWebSite: "https://www.feetinloves.com"
     urls2: "https://test-v2.pacypay.com/gateway/SendInterface"
     params2:
-        cardNumber: "4000000000000051"
+        cardNumber: "4200000000000000"
         country_label: "United States"
         country: "US"
         state: "NY"
-    mark: CARDPAY
+    mark:
+        - trustpayNew
+        - trustpay
 ...
