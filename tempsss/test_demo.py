@@ -1,17 +1,18 @@
 import pytest
 
-from tempsss.notestddd import pay
+das1 = [(1,2),(2,3),(3,4)]
+a1=b1=c1=d1=e1=f1=None
+@pytest.mark.parametrize('a,b',das1)
+def test_01(a,b):
+    global a1
+    global b1
 
-dic1 = {"name":"lili"}
-dic2 = {"age":"56"}
-dic3 = dic1.update(dic2)
+    a1 = a
+    b1 = b
 
-print(dic1)
-
-def test_pay():
-    result = {"code":"1"}
-    assert pay(result) == "success"
+def test_02():
+    print(a1,b1)
 
 
 if __name__ == '__main__':
-    pytest.main(["--cov","test_demo.py"])
+    pytest.main(['-sq','test_demo.py'])
