@@ -15,6 +15,8 @@
         country_label: "United States"
         country: "US"
         state: "NY"
+    mark:
+        - safecharge
 ...
 ---
     casename: "CD跳转支付接口"
@@ -33,6 +35,8 @@
         country_label: "United States"
         country: "US"
         state: "NY"
+    mark:
+        - cd
 ...
 ---
     casename: "Ebank跳转支付接口"
@@ -53,4 +57,6 @@
         state: "Buenos Aires"
         personTaxId: "30-52135353-1"
         streetNumber: 1040
+    mark:
+        - ebank
 ...
