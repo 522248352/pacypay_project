@@ -56,8 +56,11 @@ def test_checkout(casename, head, param1, param2):
     db.closes()
     logger.info('db预期值是: %s,实际值是：%s'%(['1000','2000'],dbResu[0][0]))
     assert dbResu[0][0] in ['1000','2000']
+    
+    with open("../test_data/dd.yml",'a+') as f:
+        f.write(tn)
 
 if __name__ == '__main__':
     # pytest.main(['-sq','test_checkout_new.py','--alluredir','../allurefiles'])
-    # pytest.main(['-sq','-m','ecpNew','test_checkout_new.py'])
-    pytest.main(['-sq', 'test_checkout_new.py', '--alluredir', '../allurefiles'])
+    pytest.main(['-sq','-m','ecpNew','test_checkout_new.py'])
+    # pytest.main(['-sq', 'test_checkout_new.py', '--alluredir', '../allurefiles'])
